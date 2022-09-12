@@ -49,7 +49,7 @@
     <div class="col-md-4 order-md-2 mb-4">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
         <span class="text-muted">Resumen</span>
-        <span class="badge badge-secondary badge-pill">0</span>
+        <span class="badge badge-secondary badge-pill" id="resumen"></span>
       </h4>
       <ul class="list-group mb-3">
         <li class="list-group-item d-flex justify-content-between lh-condensed">
@@ -57,7 +57,7 @@
             <h6 class="my-0">Total en Productos</h6>
             <small class="text-muted">Total </small>
           </div>
-          <span class="text-muted">$0</span>
+          <span class="text-muted" id="total">$ 0.00</span>
         </li>
         
       </ul>
@@ -77,20 +77,27 @@
           </div>
           <div class="col-md-6 mb-3">
             <label for="Number">Cantidad</label>
-            <input type="text" class="form-control" id="Number" placeholder="" value="" required>
+            <input type="text" class="form-control" id="Number"  placeholder="" value="" required>
             <div class="invalid-feedback">
              Cantidad inválida
             </div>
           </div>
         </div>
-        <button class="btn btn-primary btn-lg btn-block" type="button">Agregar</button>
+        <button class="btn btn-primary btn-lg btn-block" type="button" id="btnSubmit">Agregar</button>
+        <br>
+        <button type="button" class="btn btn-danger" id="btnVaciar">Vaciar</button>
         <hr class="mb-4">
+        
         
         <!-- Insertar tabla aquí -->
 
       </form>
     </div>
   </div>
+
+  <table class="table" id="tablaCompras">
+   
+  </table>
 
   <footer class="my-5 pt-5 text-muted text-center text-small">
     <p class="mb-1">&copy; 2022 JC Inc.</p>
@@ -105,5 +112,7 @@
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.6/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+  
   </body>
 </html>
